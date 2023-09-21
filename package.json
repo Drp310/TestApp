@@ -9,9 +9,7 @@
   "scripts": {
     "start": "rm -rf ./dist/** && gulp start",
     "build": "gulp build",
-    "lint": "eslint ./app",
-    "test-deploy": "./deployTest.sh -p '/home/autopartners/apps/site-test'",
-    "production-deploy": "./deploy.sh -p '/home/autopartners/apps/ap-site'"
+    "lint": "eslint ./app"
   },
   "repository": {
     "type": "git",
