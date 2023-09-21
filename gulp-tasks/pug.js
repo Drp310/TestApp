@@ -36,32 +36,10 @@ const pugToHtmlRus = () =>
     .pipe(urlBuilder())
     .pipe(dest("dist/"));
 
-const pugToHtmlEng = () =>
-  src(["app/pages/*.pug", "!app/pages/layout.pug"])
-    .pipe(plumber())
-    .pipe(
-      data(() => {
-        return {
-          text: JSON.parse(fs.readFileSync(`dist/blocks.json`)),
-          lang: "eng",
-        };
-      })
-    )
-    .pipe(pug())
-    .pipe(replace(/img\//gm, `../img/`))
-    .pipe(replace(/css\//gm, `../css/`))
-    .pipe(replace(/js\//gm, `../js/`))
-    .pipe(replace(/libs\//gm, `../libs/`))
-    .pipe(replace(/pdf\//gm, `../pdf/`))
-    .pipe(replace(`lang="rus"`, `lang="eng"`))
-    .pipe(htmlbeautify())
-    .pipe(dest("dist/eng"));
-
 const deleteJson = () => src(["dist/blocks.json"]).pipe(clean());
 
 export default series(
   blocksJsons,
-  pugToHtmlEng,
   pugToHtmlRus,
   deleteJson
 );

@@ -10,7 +10,7 @@ const script = () =>
       webpack({
         entry: {
           index: "./app/js/index.js",
-          materials: "./app/js/materials.js",
+          main: "./app/js/main/index.js"
         },
         output: {
           filename: "[name].js",

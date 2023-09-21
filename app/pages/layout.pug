@@ -1,0 +1,20 @@
+doctype html
+html(lang="ru")
+  head
+    title Test App
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(content="width=device-width, initial-scale=1" name="viewport")
+    meta(name="theme-color" content="#ffffff")
+    meta(name="apple-mobile-web-app-capable" content="yes")
+    meta(name="apple-mobile-web-app-status-bar-style" content="black-translucent")
+    link(type="image/x-icon" href="../img/favicon.ico" rel="shortcut icon")
+    link(rel="stylesheet" href="../css/style.css")
+  body
+    include mixins/mixins
+    block header
+      include common/header/header
+    block content
+      include main/main
+    include common/popup_request/popup_request
+    block scripts
