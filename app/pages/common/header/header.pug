@@ -1,0 +1,27 @@
+-
+  var header_items = [['/#', text['header']['header-link-one'][lang]], ['/#', text['header']['header-link-two'][lang]],
+    ['/#', text['header']['header-link-three'][lang]], ['/#', text['header']['header-link-four'][lang]],
+    ['/#', text['header']['header-link-five'][lang]], ['/#', text['header']['header-link-six'][lang]]]
+//8-345-123-34-45
+header.header
+  .container
+    .header__wrapper 
+      img(src='img/common/header/logo.svg').header__logo 
+      .header__links
+        each link in header_items
+          a(href=link[0]).header__link!= link[1]
+      a(href="tel:8-345-123-34-45").header__contact  
+        img(src='img/common/header/phone_icon.svg').header__phone__icon 
+        .header__phone__value 8-345-123-34-45
+    .content 
+      h1.content__title СОЗДАЮ УСЛОВИЯ <br> ДЛЯ ВАШЕГО УСПЕХА    
+      .content__text1 Когда ваше время и энергия лучше сфокусированы, стремление к новым <br> возможностям становится реальностью,  ваш успех зависит от ваших действий
+      button.content__button__white Записаться на консультацию
+      button.content__button__other Бесплатная консультация
+      img(src='img/mentor2.png').content__man 
+      .content__goals 
+      .content__productivity
+      
+
+
+    

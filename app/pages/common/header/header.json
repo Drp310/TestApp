@@ -1,5 +1,20 @@
 {
-  "header-top-title": {
+  "header-link-one": {
     "rus": "Карьера"
+  },
+  "header-link-two": {
+    "rus": "Наставничество"
+  },
+  "header-link-three": {
+    "rus": "Мероприятия"
+  },
+  "header-link-four": {
+    "rus": "Кейсы"
+  },
+  "header-link-five": {
+    "rus": "Отзывы"
+  },
+  "header-link-six": {
+    "rus": "Контакты"
   }
 }

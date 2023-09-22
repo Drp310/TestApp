@@ -1,0 +1,47 @@
+.header {
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2.5rem;
+  }
+  &__links {
+    display: flex;
+    justify-content: space-between;
+    width: 38rem;
+  }
+  &__contact {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 12.8125rem;
+  }
+  &__link {
+    font-size: 0.875rem;
+    color: $white;
+  }
+  &__phone__value {
+    color: $white;
+    font-size: 1.125rem;
+  }
+}
+.content {
+  margin-top: 10.9713rem;
+  &__title {
+    color: $white;
+    font-size: 4.0625rem;
+  }
+  &__text1 {
+    color: $white;
+  }
+  &__man {
+    float: right;
+  }
+  &__button {
+    width: 23.75rem;
+    height: 4.4375rem;
+    border-radius: 1px;
+    border-color: $white;
+    font-size: 10.125 rem;
+  }
+}
